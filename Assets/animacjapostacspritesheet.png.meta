@@ -1,0 +1,3031 @@
+fileFormatVersion: 2
+guid: 82df8cd79f977cf428256977ecc6b7bb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 216
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea3cb882f5d0c948b90379261d76a58
+      internalID: -1258721929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb38f63764fa1d94b988a8b5374494f6
+      internalID: 1263969301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621a930e58c7edf44af2d3a5b1463c99
+      internalID: 282871636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c16a5d41fe2314882573b6bb50a12f
+      internalID: 53661164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de3d9b61e523ab4e8db16f83b8fa464
+      internalID: 1759519484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec201e6947386004aac51159dfe6b9ae
+      internalID: -606786803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3b39f79031dde41b167db92f306ae6
+      internalID: 617563006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbefd6d4f8a4524293d1889a5511615
+      internalID: -1674538877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6bc2d771ce6bf40ae8029c9e9a0112
+      internalID: -151764475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e3fb5d355676748938f4dcca4208ed
+      internalID: -1761398025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 7700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b2ba0f7dc7ad9478c3451c94091d85
+      internalID: 2098118451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da5fe78a9dc4734a91e760415de7900
+      internalID: -1932390614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87167784fdb4c7b42a2e271557d919ae
+      internalID: -1501946096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dbd064bd541fd43a3ff52e481bd3f8
+      internalID: -120542307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f8e664f277c9d4d96ab7dfce5a6bd2
+      internalID: -1223325280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b91d8016a0acc4fb03c4e776ee57c8
+      internalID: 408890700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9623c052016e7940b4ecec267654334
+      internalID: 1155894808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb791c8d9d2af6b48a0ca5ffd81299ef
+      internalID: -1330340605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63d044a6fb27df40860fe73a604cc0b
+      internalID: -2055379830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2374ca0fec2f87d42a0a6bb537cbd5d5
+      internalID: 738793133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82614943a683bf14895dcde2cd1966ce
+      internalID: 1196256294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 7000
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6516d5b785135954e9e84f0ba61ab626
+      internalID: -1706784262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a80f4359c3660e449daf43ca31e80b8
+      internalID: 505782297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7405841474c8145a76d4ea276111eb
+      internalID: -510696171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9ed03bd7919b649977477abc9adcf1
+      internalID: 1668034611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8c06a66f8104f4cabf944c8036b348
+      internalID: -1975867675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5c0e2307654554889b59fc5b1a153d
+      internalID: 2049784007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d66c2faa1f34d4b95a9126402bc5e9
+      internalID: 1677765958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e215f7f5a1983244ba823c058e12f947
+      internalID: -1563281565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3020892eafac63f4c8aeb597096c1c73
+      internalID: -1929545695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf52238fc125fd448d372472791a75c
+      internalID: 1318362432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f2586d14c0f074cb609a7a50cbd317
+      internalID: 1774003876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 6300
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c669424253e38ea4085973229f856892
+      internalID: 1518182728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db372e97c89b54f43ac976b66c80f091
+      internalID: 427520204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7277f8de0b016514b8ab57afc9d585fa
+      internalID: 879895016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414aa78cbc7fa6c4ea5b6188d78a3b17
+      internalID: -1372920780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a2bba52732db7489a4c08915a45b16
+      internalID: -2100300379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601fef85e63fdd544af96df5d4d1918c
+      internalID: -1004584327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80065cbbdbf8e54468d67e1f3c2a3843
+      internalID: 777616296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f6dbd3918b3a04786c20307315d22f
+      internalID: -1745303024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27c5339353387e49ad8f64aa8631bda
+      internalID: -1223491192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e760aca3a7650f47a7906fdc9d0ef3b
+      internalID: -1932170202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b524915ea7e8604595be9da99237395
+      internalID: 1368237336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 5600
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b84a47677145c542aee11812c861f2c
+      internalID: -1075588377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a391004bdb3cceb44b52127ee0929655
+      internalID: 932469317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782862a951166d045899c71444a9c6ab
+      internalID: -1049386221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f39e2f1f793d84a82cffb20d4e105b
+      internalID: -54104752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a57b38271885284a8268077630f7db0
+      internalID: -1509878938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbe6670e1fb1794da8f76ac82599fe4
+      internalID: -1805433897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4f2a398ad11d047bd04a74baf6ef71
+      internalID: -158419472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835dacda9cbd1054383cd99d3e0f1efc
+      internalID: 612682149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c793b25952e791d42b27e026d1e8c0a8
+      internalID: -240731994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e6b7bf0d9d6f141b7d55106a4a8bf3
+      internalID: 797579234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcef0826ce7b55745afe22d827afde84
+      internalID: -508924408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 4900
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e16c40595180441a5ea483b38bb905
+      internalID: 275802047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481fe02f86280644a9ff845129f79457
+      internalID: 471205548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8cfb6619243624999c6cb8f2031ad3
+      internalID: -1563379649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a6911e44212354a94580e363c7b87c
+      internalID: -339406112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552b0d95d9df10d41b7b84d95a558a3f
+      internalID: 316032684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe7aba33cc2bd945893eb92c77cfd83
+      internalID: -2006094263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf304038374fbd4b841bfc46220afd3
+      internalID: 613010227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1cd7e856f8639459b788baf11de467
+      internalID: -1877043325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8dfada3be68f04aaed539af3d0688e
+      internalID: -1471802298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9dab6b88c6abf499b9b3b79dc73fc8
+      internalID: 647457959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c307ab86fdbc4b54c82d3ee9b3cd3de5
+      internalID: 1193451716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 4200
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a5a12861a465a4d9eb60135134d176
+      internalID: 826828970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196b48332f7694245a285ab972ab61e8
+      internalID: -1409403479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261e821478c6fa34094789b27417d1ae
+      internalID: 118471538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e478341de6c21f6418466638afceb7a3
+      internalID: -1355897185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556ad02aa6013b94da823b4c78a1ea96
+      internalID: -660244563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e69c90be3404d0488616abd9d003109
+      internalID: 1077471655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cf995c51a641d439f756ab9c333fa2
+      internalID: 183845425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff6583e74a932e4da1e296bef66d6b6
+      internalID: -1429275620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440c93270f5be7b48b8d7b214074cbef
+      internalID: 527480216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd248d86ff4c53459adf911b0e709ad
+      internalID: -1421041288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ce5a87e7f00494386886261ef87bf3
+      internalID: 1734530595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 3500
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d207217ff86bd45bdcaaab54a94242
+      internalID: 1266344336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd66447e171f8945bc95ffe8b8f576d
+      internalID: 1543566441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765524fb5ececfe4f998ad8405bf4d80
+      internalID: -2001988267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bf401fe47651d439abf66a73d9481b
+      internalID: 1743061223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5caeb2e57a7640b4d919cbaec9a8475a
+      internalID: -806748213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0591af98b1255b4c813e316f85c12cd
+      internalID: -867262184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc5ec1b66f688b4b9f8f909df8d84f6
+      internalID: 1769946616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752592dec97408b468cdccfea127d6f2
+      internalID: -128035533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4bb6104a5586d498b50827000218ef
+      internalID: 541503015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdb4fc364f97fb43bae0f9cf58992a9
+      internalID: -1713732062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29595c8bf94310f4db4b61230517504f
+      internalID: 754048652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 2800
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d1246c155a562419660b712629316e
+      internalID: 1033208003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4eacfb0158126d42bad2dba1a2789a4
+      internalID: -198930028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0202bf8dd76588b4b8741084e43bafd2
+      internalID: 529955012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2dc053bfaf89b489b3dde4b916cc60
+      internalID: 307316025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d5c8e4755d3384b91fabca5a932519
+      internalID: -1497730890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccba7db126de0f4bb37e23771e16e19
+      internalID: 1295646831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd99527e000e4f240a93114c1fcdf52c
+      internalID: -1714441510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8391bbe08c2c9f4bb2fe88e0eb93639
+      internalID: -878957492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82681e3097ee5fb47aab8efa5d0f2534
+      internalID: -774564601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98312d09fe41cff478c652f354cfef90
+      internalID: -792612716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c85a7af22aa7b0498e732f8f1d57891
+      internalID: 137928514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 2100
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5001fe0634913c64a98bac90fa705c5b
+      internalID: -1795269457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a176e6decacea34fbf62fed9d0cb074
+      internalID: -2074975371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4283bd2615921564190da1a739554647
+      internalID: -125768957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09232f75e1fb4d8408ed4423d81c734c
+      internalID: 326655859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2720044b0171fec458322591bb0fe7ef
+      internalID: -1196293488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd61f126522ab948865a70c4ce2894b
+      internalID: -1992426485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f8c287c03f96c4a9514607cd210c99
+      internalID: -2072044243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f44c447788d0f4a84d8e12879a2016
+      internalID: 2090674887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97bbb8f1bd7c8748b9214076932de6c
+      internalID: 45979173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530931976336aeb44bcaf9f8bc554a3c
+      internalID: -1523990808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb448cd74a4b6e4eb852adae012ce07
+      internalID: 1648851990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 1400
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452ea3d6ad4f2db4480fcc64227e6df4
+      internalID: -953485896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03a2018de99df44ea86e9240dbac5be
+      internalID: -1107340856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f23e23e651b1e44b078173f3e2221d
+      internalID: 58343399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbe1b710f53bba47a5a7319b43e44d9
+      internalID: -1716390623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b3ba9959894544a9b7355bd7c318fc
+      internalID: -1653502947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf218f4b38044a4b8b0e57a0760faa4
+      internalID: -1002516982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9815e8ea3b9f143926f386f8e0d73d
+      internalID: 1675568742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d774b2582f173cd4d8d0e5785b5a3e16
+      internalID: -376461553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38265879773462c45a3bdee0c8d44fa8
+      internalID: -1397919683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309f97e76c89e3d499271c23ba1368a5
+      internalID: -1327835441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e415326d2885064e99ce48883491514
+      internalID: 1812775047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 700
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b499d24f8f6a44b9107e19e35dcd7b
+      internalID: 1318056527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0732cf4085bef4085fdf07d2fbe2d9
+      internalID: -8334395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd92668156cc7d94a933504cb17b5968
+      internalID: -1360009965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1360f48b64a45c4aa7334a794a3e621
+      internalID: 960045695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad203e7fe24379b489885cccc8e35dce
+      internalID: 903553032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 5788
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb759cb292537dc498c49bd2669054d0
+      internalID: -1687921779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68097a9040d694747b78dd285b4f5905
+      internalID: -527508668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 8682
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bc499db4dcf494e87a0ad60c7f135b
+      internalID: -117257612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 10129
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7355490c4471b3848ba1dfa6f65774ec
+      internalID: -161853872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 11576
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead38c9197c15b44ab6c0f44bc2d77b1
+      internalID: 368687438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 13023
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021ffb30049b69749b4e5df7ac7ded87
+      internalID: 1533369679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacjapostacspritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 14470
+        y: 0
+        width: 1447
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc486f049febe04888a0c9fd342c394
+      internalID: 735081059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      animacjapostacspritesheet_0: -1258721929
+      animacjapostacspritesheet_1: 1263969301
+      animacjapostacspritesheet_10: 2098118451
+      animacjapostacspritesheet_100: -125768957
+      animacjapostacspritesheet_101: 326655859
+      animacjapostacspritesheet_102: -1196293488
+      animacjapostacspritesheet_103: -1992426485
+      animacjapostacspritesheet_104: -2072044243
+      animacjapostacspritesheet_105: 2090674887
+      animacjapostacspritesheet_106: 45979173
+      animacjapostacspritesheet_107: -1523990808
+      animacjapostacspritesheet_108: 1648851990
+      animacjapostacspritesheet_109: -953485896
+      animacjapostacspritesheet_11: -1932390614
+      animacjapostacspritesheet_110: -1107340856
+      animacjapostacspritesheet_111: 58343399
+      animacjapostacspritesheet_112: -1716390623
+      animacjapostacspritesheet_113: -1653502947
+      animacjapostacspritesheet_114: -1002516982
+      animacjapostacspritesheet_115: 1675568742
+      animacjapostacspritesheet_116: -376461553
+      animacjapostacspritesheet_117: -1397919683
+      animacjapostacspritesheet_118: -1327835441
+      animacjapostacspritesheet_119: 1812775047
+      animacjapostacspritesheet_12: -1501946096
+      animacjapostacspritesheet_120: 1318056527
+      animacjapostacspritesheet_121: -8334395
+      animacjapostacspritesheet_122: -1360009965
+      animacjapostacspritesheet_123: 960045695
+      animacjapostacspritesheet_124: 903553032
+      animacjapostacspritesheet_125: -1687921779
+      animacjapostacspritesheet_126: -527508668
+      animacjapostacspritesheet_127: -117257612
+      animacjapostacspritesheet_128: -161853872
+      animacjapostacspritesheet_129: 368687438
+      animacjapostacspritesheet_13: -120542307
+      animacjapostacspritesheet_130: 1533369679
+      animacjapostacspritesheet_131: 735081059
+      animacjapostacspritesheet_14: -1223325280
+      animacjapostacspritesheet_15: 408890700
+      animacjapostacspritesheet_16: 1155894808
+      animacjapostacspritesheet_17: -1330340605
+      animacjapostacspritesheet_18: -2055379830
+      animacjapostacspritesheet_19: 738793133
+      animacjapostacspritesheet_2: 282871636
+      animacjapostacspritesheet_20: 1196256294
+      animacjapostacspritesheet_21: -1706784262
+      animacjapostacspritesheet_22: 505782297
+      animacjapostacspritesheet_23: -510696171
+      animacjapostacspritesheet_24: 1668034611
+      animacjapostacspritesheet_25: -1975867675
+      animacjapostacspritesheet_26: 2049784007
+      animacjapostacspritesheet_27: 1677765958
+      animacjapostacspritesheet_28: -1563281565
+      animacjapostacspritesheet_29: -1929545695
+      animacjapostacspritesheet_3: 53661164
+      animacjapostacspritesheet_30: 1318362432
+      animacjapostacspritesheet_31: 1774003876
+      animacjapostacspritesheet_32: 1518182728
+      animacjapostacspritesheet_33: 427520204
+      animacjapostacspritesheet_34: 879895016
+      animacjapostacspritesheet_35: -1372920780
+      animacjapostacspritesheet_36: -2100300379
+      animacjapostacspritesheet_37: -1004584327
+      animacjapostacspritesheet_38: 777616296
+      animacjapostacspritesheet_39: -1745303024
+      animacjapostacspritesheet_4: 1759519484
+      animacjapostacspritesheet_40: -1223491192
+      animacjapostacspritesheet_41: -1932170202
+      animacjapostacspritesheet_42: 1368237336
+      animacjapostacspritesheet_43: -1075588377
+      animacjapostacspritesheet_44: 932469317
+      animacjapostacspritesheet_45: -1049386221
+      animacjapostacspritesheet_46: -54104752
+      animacjapostacspritesheet_47: -1509878938
+      animacjapostacspritesheet_48: -1805433897
+      animacjapostacspritesheet_49: -158419472
+      animacjapostacspritesheet_5: -606786803
+      animacjapostacspritesheet_50: 612682149
+      animacjapostacspritesheet_51: -240731994
+      animacjapostacspritesheet_52: 797579234
+      animacjapostacspritesheet_53: -508924408
+      animacjapostacspritesheet_54: 275802047
+      animacjapostacspritesheet_55: 471205548
+      animacjapostacspritesheet_56: -1563379649
+      animacjapostacspritesheet_57: -339406112
+      animacjapostacspritesheet_58: 316032684
+      animacjapostacspritesheet_59: -2006094263
+      animacjapostacspritesheet_6: 617563006
+      animacjapostacspritesheet_60: 613010227
+      animacjapostacspritesheet_61: -1877043325
+      animacjapostacspritesheet_62: -1471802298
+      animacjapostacspritesheet_63: 647457959
+      animacjapostacspritesheet_64: 1193451716
+      animacjapostacspritesheet_65: 826828970
+      animacjapostacspritesheet_66: -1409403479
+      animacjapostacspritesheet_67: 118471538
+      animacjapostacspritesheet_68: -1355897185
+      animacjapostacspritesheet_69: -660244563
+      animacjapostacspritesheet_7: -1674538877
+      animacjapostacspritesheet_70: 1077471655
+      animacjapostacspritesheet_71: 183845425
+      animacjapostacspritesheet_72: -1429275620
+      animacjapostacspritesheet_73: 527480216
+      animacjapostacspritesheet_74: -1421041288
+      animacjapostacspritesheet_75: 1734530595
+      animacjapostacspritesheet_76: 1266344336
+      animacjapostacspritesheet_77: 1543566441
+      animacjapostacspritesheet_78: -2001988267
+      animacjapostacspritesheet_79: 1743061223
+      animacjapostacspritesheet_8: -151764475
+      animacjapostacspritesheet_80: -806748213
+      animacjapostacspritesheet_81: -867262184
+      animacjapostacspritesheet_82: 1769946616
+      animacjapostacspritesheet_83: -128035533
+      animacjapostacspritesheet_84: 541503015
+      animacjapostacspritesheet_85: -1713732062
+      animacjapostacspritesheet_86: 754048652
+      animacjapostacspritesheet_87: 1033208003
+      animacjapostacspritesheet_88: -198930028
+      animacjapostacspritesheet_89: 529955012
+      animacjapostacspritesheet_9: -1761398025
+      animacjapostacspritesheet_90: 307316025
+      animacjapostacspritesheet_91: -1497730890
+      animacjapostacspritesheet_92: 1295646831
+      animacjapostacspritesheet_93: -1714441510
+      animacjapostacspritesheet_94: -878957492
+      animacjapostacspritesheet_95: -774564601
+      animacjapostacspritesheet_96: -792612716
+      animacjapostacspritesheet_97: 137928514
+      animacjapostacspritesheet_98: -1795269457
+      animacjapostacspritesheet_99: -2074975371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
