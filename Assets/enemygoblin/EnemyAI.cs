@@ -1,14 +1,16 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
     public int maxHealth = 3;
     public float moveSpeed = 2f;
+    public float pushSpeed = 10f;
     public float chaseRange = 5f;
     public float attackRange = 1.2f;
     public float attackCooldown = 1.5f;
+    public AnimationCurve pushForceInTime;
+    public AnimationCurve DeadForceInTime;
 
     private int currentHealth;
     private Transform player;
@@ -18,6 +20,15 @@ public class EnemyAI : MonoBehaviour
     private bool isDead = false;
     private bool isAttacking = false;
     private float lastAttackTime;
+
+    private Coroutine pushCoroutine = null;
+    private bool balanced = true;
+
+    private Vector3? positionStartKnockback;
+    private Vector3? positionEndKnockBack;
+
+    private int hitAnimationIndex = 0;
+    private int maxHitAnimationIndex = 0;
 
     void Start()
     {
@@ -35,11 +46,15 @@ public class EnemyAI : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= attackRange && Time.time >= lastAttackTime + attackCooldown)
+        bool hit = anim.GetCurrentAnimatorStateInfo(0).IsTag("Hit");
+
+        if (hit && !balanced) return;
+
+        if (distance <= attackRange && Time.time >= lastAttackTime + attackCooldown && !hit)
         {
             Attack();
         }
-        else if (distance <= chaseRange && !isAttacking)
+        else if (distance <= chaseRange && !isAttacking && !hit)
         {
             Chase();
         }
@@ -80,13 +95,23 @@ public class EnemyAI : MonoBehaviour
         isAttacking = false;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, int? overrideAnimationIndex)
     {
         if (isDead) return;
 
         currentHealth -= damage;
-        anim.SetTrigger("Hit");
 
+        if(currentHealth > 0)
+        {
+            anim.SetTrigger("Hit");
+            anim.SetInteger("HitIndex", overrideAnimationIndex != null ? overrideAnimationIndex.Value : hitAnimationIndex);
+            Debug.Log($"hitIndex: {hitAnimationIndex}");
+
+            if (overrideAnimationIndex == null)
+                hitAnimationIndex = ++hitAnimationIndex > maxHitAnimationIndex ? 0 : hitAnimationIndex;
+
+            Debug.Log($"SetTrigger(Hit) frame={Time.frameCount} from={gameObject.name}", this);
+        }
         if (currentHealth <= 0)
         {
             Die();
@@ -97,9 +122,81 @@ public class EnemyAI : MonoBehaviour
     {
         isDead = true;
 
+        anim.SetTrigger("IsDead");
+    }
+
+    void FreezeRagdoll()
+    {
         rb.velocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Kinematic;
+    }
 
-        anim.SetBool("IsDead", true);
+    public void StartControlledPush()
+    {
+        Debug.Log($"Hit event frame={Time.frameCount} norm={GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime} animName: {GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).fullPathHash}");
+        Debug.Log("StartControlledPush ");
+        StopCoroutine();
+        balanced = false;
+        pushCoroutine = StartCoroutine(PushCoroutine(pushForceInTime));
+    }
+
+    public void StartDeadPush()
+    {
+        Debug.Log($"Hit event frame={Time.frameCount} norm={GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime} animName: {GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).fullPathHash}");
+        Debug.Log("StartControlledPush ");
+        StopCoroutine();
+        balanced = false;
+        pushCoroutine = StartCoroutine(PushCoroutine(DeadForceInTime));
+    }
+
+    private IEnumerator PushCoroutine(AnimationCurve pushCurve)
+    {
+        PrintDistance();
+
+        float elapsed = 0f;
+        while (elapsed < pushCurve.keys[^1].time)
+        {
+            float forceMultiplier = pushCurve.Evaluate(elapsed);
+            Vector2 dir = (player.position - transform.position).normalized;
+            dir.y = rb.velocity.y;
+
+            dir = Vector2.right;
+
+            rb.velocity = forceMultiplier * pushSpeed * -dir;
+            elapsed += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        StopCoroutine();
+    }
+
+    public void StopCoroutine()
+    {
+
+        if (pushCoroutine != null)
+        {
+            balanced = true;
+            StopCoroutine(pushCoroutine);
+            pushCoroutine = null;
+            PrintDistance();
+        }
+    }
+
+    private void PrintDistance()
+    {
+        if(positionStartKnockback == null)
+        {
+            positionStartKnockback = transform.position;
+            return;
+        }
+        
+        if(positionStartKnockback != null && positionEndKnockBack == null)
+        {
+            positionEndKnockBack = transform.position;
+            var distance = Vector3.Distance((Vector3)positionStartKnockback, (Vector3)positionEndKnockBack);
+            Debug.Log($"Distance in knockback: {distance}");
+            positionEndKnockBack = null;
+            positionStartKnockback = null;
+        }
     }
 }

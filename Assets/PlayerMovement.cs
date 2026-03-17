@@ -1,8 +1,10 @@
-using System.Diagnostics.CodeAnalysis;
+using Assets;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public PlayerAttackCollider attackCollider;
+
     [Header("Movement")]
     public float speed = 5f;
 
@@ -29,6 +31,8 @@ public class PlayerController : MonoBehaviour
     public float attackRange = 1.5f;
     public LayerMask enemyLayer;
 
+    private bool _damageDealtThisAttack;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,7 +48,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             if (!inAttack && !isRolling)
-                anim.SetTrigger("Attack");
+                Attack();
             else if (inAttack)
                 attackQueued = true;
         }
@@ -140,20 +144,30 @@ public class PlayerController : MonoBehaviour
         if (attackQueued)
         {
             attackQueued = false;
-            anim.SetTrigger("Attack");
+            Attack();
         }
     }
+
+    private void Attack()
+    {
+        anim.SetTrigger("Attack");
+        _damageDealtThisAttack = false;
+    }
+
     public void DealDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(
-            transform.position,
-            attackRange,
-            enemyLayer
-        );
+        //if (_damageDealtThisAttack) return;
+        //_damageDealtThisAttack = true;
 
-        foreach (Collider2D enemy in enemies)
-        {
-            enemy.GetComponent<EnemyAI>()?.TakeDamage(damage);
-        }
+        //Collider2D[] enemies = Physics2D.OverlapCircleAll(
+        //    transform.position,
+        //    attackRange,
+        //    enemyLayer
+        //);
+
+        //foreach (Collider2D enemy in enemies)
+        //{
+        //    enemy.GetComponent<EnemyAI>()?.TakeDamage(damage);
+        //}
     }
 }
