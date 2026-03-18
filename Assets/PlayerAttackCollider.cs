@@ -7,6 +7,10 @@ namespace Assets
     public class PlayerAttackCollider : MonoBehaviour
     {
         [SerializeField] private Animator anim;
+        [SerializeField] private AudioSource audioSource;
+
+        [SerializeField] private List<AudioClip> attackSounds;
+        private int attackSoundClipIndex = 0;
 
         public PlayerAttackAnimBehaviour currentAttackData;
         public int damage = 20;
@@ -24,6 +28,7 @@ namespace Assets
             if (collision.TryGetComponent(out EnemyAI enemyHealth))
             {
                 enemyHealth.TakeDamage(damage, currentAttackData != null && currentAttackData.specialAttack ? 1 : null);
+                PlayAttackSound();
             }
         }
 
@@ -39,6 +44,15 @@ namespace Assets
             _targetsHitInCurrentHitCycle.Add(hitTargetId);
 
             return false;
+        }
+
+        private void PlayAttackSound()
+        {
+            if (audioSource == null) return;
+
+            AudioClip clip = attackSounds[attackSoundClipIndex++ % attackSounds.Count];
+
+            audioSource.PlayOneShot(clip);
         }
 
         public void OnDisable()

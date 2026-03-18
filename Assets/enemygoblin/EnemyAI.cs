@@ -30,6 +30,24 @@ public class EnemyAI : MonoBehaviour
     private int hitAnimationIndex = 0;
     private int maxHitAnimationIndex = 0;
 
+    [SerializeField] private GameObject hitEffect1;
+    [SerializeField] private GameObject hitEffect2;
+    [SerializeField] private Transform hitEffectPoint;
+
+    private bool useSecondHitEffect = false;
+
+    private void ShowHitEffect()
+    {
+        GameObject effectToSpawn = useSecondHitEffect ? hitEffect2 : hitEffect1;
+
+        if (effectToSpawn != null && hitEffectPoint != null)
+        {
+            Instantiate(effectToSpawn, hitEffectPoint.position, Quaternion.identity);
+        }
+
+        useSecondHitEffect = !useSecondHitEffect;
+    }
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
@@ -101,7 +119,9 @@ public class EnemyAI : MonoBehaviour
 
         currentHealth -= damage;
 
-        if(currentHealth > 0)
+        ShowHitEffect();
+
+        if (currentHealth > 0)
         {
             anim.SetTrigger("Hit");
             anim.SetInteger("HitIndex", overrideAnimationIndex != null ? overrideAnimationIndex.Value : hitAnimationIndex);
