@@ -8,6 +8,7 @@ namespace Assets
     {
         [SerializeField] private Animator anim;
         [SerializeField] private AudioSource audioSource;
+        [SerializeField] private Collider2D collider;
 
         [SerializeField] private List<AudioClip> attackSounds;
         private int attackSoundClipIndex = 0;
@@ -19,6 +20,19 @@ namespace Assets
 
 
         public HashSet<int> TargetsHitInCurrentHitCycle => _targetsHitInCurrentHitCycle;
+
+
+        private void OnEnable()
+        {
+            var results = new Collider2D[10];
+            collider.OverlapCollider(new ContactFilter2D() { useTriggers = true }, results);
+
+            foreach (var item in results)
+            {
+                if(item == null) continue;
+                OnTriggerEnter2D(item);
+            }
+        }
 
         public void OnTriggerEnter2D(Collider2D collision)
         {

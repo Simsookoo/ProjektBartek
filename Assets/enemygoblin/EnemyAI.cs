@@ -67,6 +67,7 @@ public class EnemyAI : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.position);
 
         bool hit = anim.GetCurrentAnimatorStateInfo(0).IsTag("Hit");
+        bool isAttacking = anim.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
 
         if (hit && !balanced) return;
 
@@ -100,22 +101,20 @@ public class EnemyAI : MonoBehaviour
 
     void Attack()
     {
-        isAttacking = true;
+        //isAttacking = true;
         rb.velocity = Vector2.zero;
 
         anim.SetBool("IsWalking", false);
         anim.SetTrigger("Attack");
 
         lastAttackTime = Time.time;
-        StartCoroutine(ResetAttackRealtime(0.8f));
+        //StartCoroutine(ResetAttackRealtime(0.8f));
     }
-    private IEnumerator ResetAttackRealtime(float delay)
-    {
-        yield return new WaitForSecondsRealtime(delay);
-        isAttacking = false;
-    }
-
-   
+    //private IEnumerator ResetAttackRealtime(float delay)
+    //{
+    //    yield return new WaitForSecondsRealtime(delay);
+    //    isAttacking = false;
+    //}
 
     public void TakeDamage(int damage, int? overrideAnimationIndex)
     {
