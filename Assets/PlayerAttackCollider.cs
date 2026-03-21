@@ -22,19 +22,22 @@ namespace Assets
 
         public void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.tag != "Enemy") return;
+            if (!collision.TryGetComponent(out EnemyHurtbox hurtbox)) return;
             if (HitInCurrentCycle(collision)) return;
 
-            if (collision.TryGetComponent(out EnemyAI enemyHealth))
-            {
-                enemyHealth.TakeDamage(damage, currentAttackData != null && currentAttackData.specialAttack ? 1 : null);
-                PlayAttackSound();
-            }
+            hurtbox.ReceiveHit(damage, currentAttackData != null && currentAttackData.specialAttack ? 2 : null);
+            PlayAttackSound();
         }
 
         private bool HitInCurrentCycle(Collider2D collider)
         {
-            var hitTargetId = collider.GetInstanceID();
+            EnemyHurtbox hurtbox = collider.GetComponent<EnemyHurtbox>();
+            if (hurtbox == null) return true;
+
+            EnemyAI enemy = hurtbox.GetComponentInParent<EnemyAI>();
+            if (enemy == null) return true;
+
+            int hitTargetId = enemy.gameObject.GetInstanceID();
 
             if (_targetsHitInCurrentHitCycle.Contains(hitTargetId))
             {
@@ -42,7 +45,6 @@ namespace Assets
             }
 
             _targetsHitInCurrentHitCycle.Add(hitTargetId);
-
             return false;
         }
 
@@ -60,4 +62,5 @@ namespace Assets
             _targetsHitInCurrentHitCycle.Clear();
         }
     }
+
 }

@@ -28,11 +28,13 @@ public class EnemyAI : MonoBehaviour
     private Vector3? positionEndKnockBack;
 
     private int hitAnimationIndex = 0;
-    private int maxHitAnimationIndex = 0;
+    private int maxHitAnimationIndex = 1;
 
     [SerializeField] private GameObject hitEffect1;
     [SerializeField] private GameObject hitEffect2;
     [SerializeField] private Transform hitEffectPoint;
+    [SerializeField] private float hitStopLight = 0.04f;
+    [SerializeField] private float hitStopDeath = 0.08f;
 
     private bool useSecondHitEffect = false;
 
@@ -105,13 +107,15 @@ public class EnemyAI : MonoBehaviour
         anim.SetTrigger("Attack");
 
         lastAttackTime = Time.time;
-        Invoke(nameof(ResetAttack), 0.8f); // dopasuj do długości animacji
+        StartCoroutine(ResetAttackRealtime(0.8f));
     }
-
-    void ResetAttack()
+    private IEnumerator ResetAttackRealtime(float delay)
     {
+        yield return new WaitForSecondsRealtime(delay);
         isAttacking = false;
     }
+
+   
 
     public void TakeDamage(int damage, int? overrideAnimationIndex)
     {
@@ -123,6 +127,9 @@ public class EnemyAI : MonoBehaviour
 
         if (currentHealth > 0)
         {
+            if (HitStopManager.Instance != null)
+                HitStopManager.Instance.Stop(hitStopLight);
+
             anim.SetTrigger("Hit");
             anim.SetInteger("HitIndex", overrideAnimationIndex != null ? overrideAnimationIndex.Value : hitAnimationIndex);
             Debug.Log($"hitIndex: {hitAnimationIndex}");
@@ -134,6 +141,9 @@ public class EnemyAI : MonoBehaviour
         }
         if (currentHealth <= 0)
         {
+            if (HitStopManager.Instance != null)
+                HitStopManager.Instance.Stop(hitStopDeath);
+
             Die();
         }
     }
