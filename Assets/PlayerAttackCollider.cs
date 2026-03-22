@@ -10,8 +10,10 @@ namespace Assets
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private Collider2D collider;
 
-        [SerializeField] private List<AudioClip> attackSounds;
-        private int attackSoundClipIndex = 0;
+        [SerializeField] private List<AudioClip> swingSounds;
+        [SerializeField] private List<AudioClip> hitSounds;
+
+        private int hitSoundClipIndex = 0;
 
         public PlayerAttackAnimBehaviour currentAttackData;
         public int damage = 20;
@@ -40,7 +42,7 @@ namespace Assets
             if (HitInCurrentCycle(collision)) return;
 
             hurtbox.ReceiveHit(damage, currentAttackData != null && currentAttackData.specialAttack ? 2 : null);
-            PlayAttackSound();
+            PlayHitSound();
         }
 
         private bool HitInCurrentCycle(Collider2D collider)
@@ -62,11 +64,22 @@ namespace Assets
             return false;
         }
 
-        private void PlayAttackSound()
+        public void PlaySwingSound()
         {
             if (audioSource == null) return;
+            if (swingSounds == null || swingSounds.Count == 0) return;
 
-            AudioClip clip = attackSounds[attackSoundClipIndex++ % attackSounds.Count];
+            AudioClip clip = swingSounds[Random.Range(0, swingSounds.Count)];
+            audioSource.PlayOneShot(clip);
+        }
+
+        private void PlayHitSound()
+        {
+            if (audioSource == null) return;
+            if (hitSounds == null || hitSounds.Count == 0) return;
+
+            AudioClip clip = hitSounds[hitSoundClipIndex % hitSounds.Count];
+            hitSoundClipIndex++;
 
             audioSource.PlayOneShot(clip);
         }

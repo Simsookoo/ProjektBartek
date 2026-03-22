@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -35,8 +36,49 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Transform hitEffectPoint;
     [SerializeField] private float hitStopLight = 0.04f;
     [SerializeField] private float hitStopDeath = 0.08f;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Collider2D attackHitbox;
+
+    
+    [SerializeField] private List<AudioClip> swingSounds;
+    [SerializeField] private List<AudioClip> hitSounds;
+
+    [Header("Camera Shake")]
+    [SerializeField] private float hitShakeDuration = 0.08f;
+    [SerializeField] private float hitShakeMagnitude = 0.12f;
+
+    [SerializeField] private float deathShakeDuration = 0.15f;
+    [SerializeField] private float deathShakeMagnitude = 0.25f;
+
+    private int hitSoundIndex = 0;
 
     private bool useSecondHitEffect = false;
+
+   
+
+    public void PlayHitSound()
+    {
+        if (audioSource == null) return;
+        if (hitSounds == null || hitSounds.Count == 0) return;
+
+        AudioClip clip = hitSounds[hitSoundIndex % hitSounds.Count];
+        hitSoundIndex++;
+
+        audioSource.PlayOneShot(clip);
+    }
+
+    public void DealDamageToPlayer()
+    {
+        if (player == null) return;
+
+        if (Vector2.Distance(transform.position, player.position) > attackRange + 0.3f) return;
+
+        PlayerHitReceiver hitReceiver = player.GetComponent<PlayerHitReceiver>();
+        if (hitReceiver != null)
+        {
+            hitReceiver.ReceiveHit(transform);
+        }
+    }
 
     private void ShowHitEffect()
     {
@@ -57,6 +99,9 @@ public class EnemyAI : MonoBehaviour
         anim = GetComponent<Animator>();
 
         currentHealth = maxHealth;
+
+        if (attackHitbox != null)
+            attackHitbox.enabled = false;
     }
 
     void Update()
@@ -145,6 +190,11 @@ public class EnemyAI : MonoBehaviour
 
             Die();
         }
+
+        if (CameraShake.Instance != null)
+        {
+            CameraShake.Instance.Shake(hitShakeDuration, hitShakeMagnitude);
+        }
     }
 
     void Die()
@@ -152,6 +202,11 @@ public class EnemyAI : MonoBehaviour
         isDead = true;
 
         anim.SetTrigger("IsDead");
+
+        if (CameraShake.Instance != null)
+        {
+            CameraShake.Instance.Shake(deathShakeDuration, deathShakeMagnitude);
+        }
     }
 
     void FreezeRagdoll()
@@ -228,4 +283,52 @@ public class EnemyAI : MonoBehaviour
             positionStartKnockback = null;
         }
     }
+
+    public void EnableAttackHitbox()
+    {
+        if (attackHitbox != null)
+        {
+            attackHitbox.enabled = true;
+
+            EnemyAttackHitbox enemyAttackHitbox = attackHitbox.GetComponent<EnemyAttackHitbox>();
+            if (enemyAttackHitbox != null)
+            {
+                enemyAttackHitbox.ResetHitState();
+            }
+        }
+    }
+
+    public void DisableAttackHitbox()
+    {
+        if (attackHitbox != null)
+            attackHitbox.enabled = false;
+    }
+
+    public void PlaySwingSound()
+    {
+        if (audioSource == null) return;
+        if (swingSounds == null || swingSounds.Count == 0) return;
+
+        AudioClip clip = swingSounds[Random.Range(0, swingSounds.Count)];
+        audioSource.PlayOneShot(clip);
+    }
+
+    public void OnParried()
+    {
+        if (isDead) return;
+
+        DisableAttackHitbox();
+        StopCoroutine();
+
+        anim.SetTrigger("Hit");
+        anim.SetInteger("HitIndex", 0);
+
+        StartControlledPush();
+
+        if (CameraShake.Instance != null)
+        {
+            CameraShake.Instance.Shake(hitShakeDuration, hitShakeMagnitude);
+        }
+    }
+
 }
