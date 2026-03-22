@@ -132,8 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 969482}
-  - component: {fileID: 969483}
   - component: {fileID: 969484}
+  - component: {fileID: 969485}
   m_Layer: 0
   m_Name: Parryhitbox
   m_TagString: Untagged
@@ -156,29 +156,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 227129376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &969483
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969481}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.8199575
-  m_Height: 1.6830555
-  m_Direction: 1
-  m_Center: {x: -0.039545298, y: -0.28041202, z: 0}
 --- !u!114 &969484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +169,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
+--- !u!70 &969485
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969481}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.071900606, y: 0}
+  m_Size: {x: 1.5641282, y: 1.5785084}
+  m_Direction: 0
 --- !u!1 &59658346
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,8 +445,8 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
-  parryHitbox: {fileID: 0}
-  parryScript: {fileID: 0}
+  parryHitbox: {fileID: 969485}
+  parryScript: {fileID: 969484}
   parryCooldown: 0.5
 --- !u!82 &227129378
 AudioSource:

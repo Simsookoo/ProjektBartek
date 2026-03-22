@@ -52,6 +52,10 @@ public class PlayerController : MonoBehaviour
     private float parryCooldownTimer = 0f;
     private bool isParrying = false;
 
+  
+
+    
+
 
     public void PlaySwingSound()
     {
