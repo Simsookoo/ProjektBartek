@@ -32,7 +32,6 @@ public class PlayerHitReceiver : MonoBehaviour
         Debug.Log($"ENEMY-ATTACK-PLAYER: isHitStunned: {isHitStunned}");
         Debug.Log($"ENEMY-ATTACK-PLAYER: Receive Hit");
 
-
         if (!canBeHit) return;
         if (isHitStunned) return;
 

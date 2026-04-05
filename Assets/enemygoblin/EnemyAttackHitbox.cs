@@ -71,5 +71,6 @@ public class EnemyAttackHitbox : MonoBehaviour
 
         playerHitReceiver.ReceiveHit(enemyAI.transform);
         enemyAI.PlayHitSound();
+        enemyAI.InitAfterHitKnockback();
     }
 }

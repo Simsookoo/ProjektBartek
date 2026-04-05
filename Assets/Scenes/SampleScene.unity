@@ -445,6 +445,8 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
+  afterHitKnockbackDuration: 0.2
+  afterHitKnockbackForce: 7
   parryHitbox: {fileID: 969485}
   parryScript: {fileID: 969484}
   parryCooldown: 0.5
@@ -882,6 +884,8 @@ MonoBehaviour:
   hitShakeMagnitude: 0.08
   deathShakeDuration: 0.15
   deathShakeMagnitude: 0.25
+  afterHitKnockbackDuration: 0.5
+  afterHitKnockbackForce: 2
 --- !u!95 &562927905
 Animator:
   serializedVersion: 5
@@ -1548,6 +1552,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   audioSource: {fileID: 227129378}
   collider: {fileID: 1291896309}
+  player: {fileID: 227129377}
   swingSounds:
   - {fileID: 8300000, guid: d94ecb037332ff84f87ad0490459afdd, type: 3}
   - {fileID: 8300000, guid: 69a97b63c3a7e9c48a88655c8518c445, type: 3}

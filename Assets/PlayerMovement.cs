@@ -1,4 +1,5 @@
 using Assets;
+using System.Collections;
 using UnityEngine;
 
 
@@ -43,6 +44,11 @@ public class PlayerController : MonoBehaviour
     private float knockbackTimer = 0f;
 
     private float postKnockbackAnimBlockTimer = 0f;
+
+    private bool duringAfterHitKnockback = false;
+    [SerializeField] private float afterHitKnockbackDuration = 0.3f;
+    [SerializeField] private float afterHitKnockbackForce = 5;
+    private Coroutine afterHitKnockbackCoroutine;
 
     [SerializeField] private Collider2D parryHitbox;
     [SerializeField] private PlayerParryHitbox parryScript;
@@ -141,7 +147,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (!inAttack && !isRolling && !isParrying)
+        if (!inAttack && !isRolling && !isParrying && !duringAfterHitKnockback)
 
         {
             rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
@@ -290,5 +296,23 @@ public class PlayerController : MonoBehaviour
     public bool IsDeflecting()
     {
         return deflectingState;
+    }
+
+    public void InitAfterHitKnockback()
+    {
+        float direction = transform.localScale.x > 0 ? 1 : -1;
+        rb.velocity = new Vector2(direction * afterHitKnockbackForce, rb.velocity.y);
+        duringAfterHitKnockback = true;
+        isAttackDashing = false;
+
+        if (afterHitKnockbackCoroutine != null) StopCoroutine(afterHitKnockbackCoroutine);
+        afterHitKnockbackCoroutine = StartCoroutine(DisableAfterHitKnockback());
+    }
+
+    private IEnumerator DisableAfterHitKnockback()
+    {
+        yield return new WaitForSeconds(afterHitKnockbackDuration);
+        rb.velocity = new Vector2(0, rb.velocity.y);
+        duringAfterHitKnockback = false;
     }
 }

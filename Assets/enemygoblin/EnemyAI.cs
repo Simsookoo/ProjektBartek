@@ -54,7 +54,10 @@ public class EnemyAI : MonoBehaviour
 
     private bool useSecondHitEffect = false;
 
-   
+    private bool duringAfterHitKnockback = false;
+    [SerializeField] private float afterHitKnockbackDuration = 0.5f;
+    [SerializeField] private float afterHitKnockbackForce = 5;
+
 
     public void PlayHitSound()
     {
@@ -115,6 +118,7 @@ public class EnemyAI : MonoBehaviour
         bool isAttacking = anim.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
 
         if (hit && !balanced) return;
+        if (duringAfterHitKnockback) return;
 
         Debug.Log($"ENEMY-ATTACK: Distance: {distance}");
         Debug.Log($"ENEMY-ATTACK: attackRange: {attackRange}");
@@ -332,4 +336,18 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void InitAfterHitKnockback()
+    {
+        float direction = transform.localScale.x > 0 ? 1 : -1;
+        rb.velocity = new Vector2(direction * afterHitKnockbackForce, rb.velocity.y);
+        duringAfterHitKnockback = true;
+        StartCoroutine(DisableAfterHitKnockback());
+    }
+
+    private IEnumerator DisableAfterHitKnockback()
+    {
+        yield return new WaitForSeconds(afterHitKnockbackDuration);
+        rb.velocity = new Vector2(0, rb.velocity.y);
+        duringAfterHitKnockback = false;
+    }
 }

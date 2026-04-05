@@ -9,6 +9,7 @@ namespace Assets
         [SerializeField] private Animator anim;
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private Collider2D collider;
+        [SerializeField] private PlayerController player;
 
         [SerializeField] private List<AudioClip> swingSounds;
         [SerializeField] private List<AudioClip> hitSounds;
@@ -43,6 +44,7 @@ namespace Assets
 
             hurtbox.ReceiveHit(damage, currentAttackData != null && currentAttackData.specialAttack ? 2 : null);
             PlayHitSound();
+            player.InitAfterHitKnockback();
         }
 
         private bool HitInCurrentCycle(Collider2D collider)
