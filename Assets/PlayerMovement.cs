@@ -51,11 +51,7 @@ public class PlayerController : MonoBehaviour
 
     private float parryCooldownTimer = 0f;
     private bool isParrying = false;
-
-  
-
-    
-
+    private bool deflectingState = false;
 
     public void PlaySwingSound()
     {
@@ -276,6 +272,8 @@ public class PlayerController : MonoBehaviour
 
         if (parryScript != null)
             parryScript.isActive = true;
+
+        deflectingState = true;
     }
 
     public void DisableParry()
@@ -285,9 +283,12 @@ public class PlayerController : MonoBehaviour
 
         if (parryScript != null)
             parryScript.isActive = false;
+
+        deflectingState = false;
     }
 
-
-
-
+    public bool IsDeflecting()
+    {
+        return deflectingState;
+    }
 }

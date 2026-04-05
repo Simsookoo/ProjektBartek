@@ -67,6 +67,8 @@ public class EnemyAttackHitbox : MonoBehaviour
 
         hasHitPlayer = true;
 
+        Debug.Log($"ENEMY-ATTACK-PLAYER: Receive Hit");
+
         playerHitReceiver.ReceiveHit(enemyAI.transform);
         enemyAI.PlayHitSound();
     }

@@ -28,10 +28,15 @@ public class PlayerHitReceiver : MonoBehaviour
 
     public void ReceiveHit(Transform attacker = null)
     {
+        Debug.Log($"ENEMY-ATTACK-PLAYER: canBeHit: {canBeHit}");
+        Debug.Log($"ENEMY-ATTACK-PLAYER: isHitStunned: {isHitStunned}");
+        Debug.Log($"ENEMY-ATTACK-PLAYER: Receive Hit");
+
+
         if (!canBeHit) return;
         if (isHitStunned) return;
 
-        if (playerController != null && playerController.IsParrying())
+        if (playerController != null && playerController.IsDeflecting())
             return;
 
         isHitStunned = true;

@@ -116,7 +116,15 @@ public class EnemyAI : MonoBehaviour
 
         if (hit && !balanced) return;
 
-        if (distance <= attackRange && Time.time >= lastAttackTime + attackCooldown && !hit)
+        Debug.Log($"ENEMY-ATTACK: Distance: {distance}");
+        Debug.Log($"ENEMY-ATTACK: attackRange: {attackRange}");
+        Debug.Log($"ENEMY-ATTACK: lastAttackTime: {lastAttackTime}");
+        Debug.Log($"ENEMY-ATTACK: attackCooldown: {attackCooldown}");
+        var canAttack = distance <= attackRange && Time.time >= lastAttackTime + attackCooldown && !hit;
+
+        Debug.Log($"ENEMY-ATTACK: canAttack: {canAttack}");
+
+        if (canAttack)
         {
             Attack();
         }
@@ -146,20 +154,13 @@ public class EnemyAI : MonoBehaviour
 
     void Attack()
     {
-        //isAttacking = true;
         rb.velocity = Vector2.zero;
 
         anim.SetBool("IsWalking", false);
         anim.SetTrigger("Attack");
 
         lastAttackTime = Time.time;
-        //StartCoroutine(ResetAttackRealtime(0.8f));
     }
-    //private IEnumerator ResetAttackRealtime(float delay)
-    //{
-    //    yield return new WaitForSecondsRealtime(delay);
-    //    isAttacking = false;
-    //}
 
     public void TakeDamage(int damage, int? overrideAnimationIndex)
     {
